@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume - Shiv Kumar</title>
+</head>
+<body>
+  <header>
+    <h1>👨‍💻 Shiv Kumar</h1>
+    <p>🎓 B.Tech 2nd Year Computer Science Student</p>
+    <address>
+      📧 <a href="mailto:yourshivkumar17@gmail.com">yourshivkumar17@gmail.com</a> | 
+      📱 <a href="tel:+919258750225">+91-9258750225</a>
+    </address>
+    <hr>
+  </header>
+  <main>
+    <section>
+      <h2>👤 About Me</h2>
+      <figure>
+        <img src="shiv.jpg" alt="Shiv Kumar's Photo" width="120">
+        <figcaption>Shiv Kumar</figcaption>
+      </figure>
+      <p>
+        Hello! My name is Shiv Kumar. I am a B.Tech 2nd-year Computer Science student.
+        I am passionate about programming, web development, and learning new technologies.
+        My goal is to become a skilled software engineer and create applications that solve real-world problems.
+      </p>
+    </section>
+    <section>
+      <h2>📚 Education</h2>
+
+      <article>
+        <h3>🎓 B.Tech - Computer Science</h3>
+        <p>XYZ University (2024 – Present)</p>
+      </article>
+
+      <article>
+        <h3>🏫 Senior Secondary (Class 12th)</h3>
+        <p>Your School Name, 2024<br>
+        Subjects: Physics, Chemistry, Mathematics, Computer Science</p>
+      </article>
+
+      <article>
+        <h3>🏫 Secondary (Class 10th)</h3>
+        <p>Your School Name, 2022</p>
+      </article>
+    </section>
+    <section>
+      <h2>🛠️ Skills</h2>
+      <ul>
+        <li>💻 Programming Languages: Python, C, C++, HTML, CSS</li>
+        <li>🌐 Web Development: Basic Frontend (HTML, CSS, Forms)</li>
+        <li>🗄️ Database: SQL (Basics)</li>
+        <li>🛠️ Tools: VS Code, GitHub, MS Office</li>
+        <li>🧩 Problem Solving & Logical Thinking</li>
+      </ul>
+    </section>
+    <section>
+      <h2>🎯 Hobbies</h2>
+      <ul>
+        <li>💻 Coding and Building Small Projects</li>
+        <li>🧑‍💻 Exploring New Technologies</li>
+        <li>📖 Reading Tech Blogs & Articles</li>
+        <li>♟️ Playing Chess</li>
+        <li>🎵 Listening to Music</li>
+      </ul>
+    </section>
+    <section>
+      <h2>🚀 Projects</h2>
+
+      <article>
+        <h3>📄 Student Registration Form (HTML)</h3>
+        <p>Created a web-based form using HTML with fields like name, email, phone, and address.</p>
+      </article>
+
+      <article>
+        <h3>📚 Library Management Database (SQL)</h3>
+        <p>Designed and implemented a database system for managing books, students, and issued records.</p>
+      </article>
+
+      <article>
+        <h3>🐍 Fun Python Programs</h3>
+        <p>Mini-projects using Turtle, Random, and Math modules (like drawing shapes, games, number guessing, etc.).</p>
+      </article>
+    </section>
+
+  </main>
+  <footer>
+    <hr>
+    <h3>📞 Contact Information</h3>
+    <address>
+      📧 Email: <a href="mailto:yourshivkumar17@gmail.com">yourshivkumar17@gmail.com</a><br>
+      📱 Mobile: <a href="tel:+911234567890">+91-1234567890</a><br>
+      📍 Location: India
+    </address>
+    <p>🙏 Thank you for visiting!</p>
+  </footer>
+
+</body>
+</html>

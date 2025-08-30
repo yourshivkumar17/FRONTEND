@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GLA University Time Table</title>
+<style>
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+  }
+  th, td {
+    border: 1px solid black;
+    padding: 4px;
+    text-align: center;
+    vertical-align: top;
+  }
+  .header-cell {
+    background-color: #d3d3d3;
+    font-weight: bold;
+    text-align: center;
+  }
+  .highlight {
+    background-color: #ffff00;
+  }
+</style>
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<table>
+  <thead>
+    <tr>
+      <th colspan="12" class="header-cell">GLA UNIVERSITY, MATHURA</th>
+    </tr>
+    <tr>
+      <th colspan="12" class="header-cell">Institute of Engineering & Technology<br>Computer Engineering & Applications</th>
+    </tr>
+    <tr>
+      <th colspan="6" class="header-cell">Course: Bachelor of Technology</th>
+      <th colspan="6" class="header-cell">Session: 2025-2026<br>w.e.f. 25/Aug/2025</th>
+    </tr>
+    <tr>
+      <th colspan="4" class="header-cell">Time Table: Odd Semester Programme</th>
+      <th colspan="4" class="header-cell">Faculty: Mr. Amit Kumar</th>
+      <th colspan="4" class="header-cell">Section: 2FF | Semester: III</th>
+    </tr>
+  </thead>
+</table>
+
+<br>
+
+<!-- ================= TIMETABLE ================= -->
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Day</th>
+      <th>1<br>08:00-09:00</th>
+      <th>2<br>09:00-10:00</th>
+      <th>3<br>10:00-11:00</th>
+      <th>4<br>11:00-12:00</th>
+      <th>5<br>12:00-01:00</th>
+      <th>6<br>01:00-02:00</th>
+      <th>7<br>02:00-03:00</th>
+      <th>8<br>03:00-04:00</th>
+      <th>9<br>04:00-05:00</th>
+      <th>10<br>05:00-06:00</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Monday</b></td>
+      <td colspan="2">BCSC0801<br>(OOP Lab)<br>ABVII-420</td>
+      <td></td>
+      <td colspan="2">BCSC0804<br>(CO Lab)<br>ABVII-5002/5004/5005</td>
+      <td></td>
+      <td colspan="2">BCSC1010<br>(Discrete Math)<br>ABVII-420</td>
+      <td>BCSC1003<br>(DBMS)<br>ABVII-420</td>
+      <td>BELH0020<br>(English)<br>ABVII-420</td>
+    </tr>
+    <tr>
+      <td><b>Tuesday</b></td>
+      <td colspan="2">BCSE0613<br>(Frontend Engg)<br>ABVII-420</td>
+      <td colspan="2">BCSC0802<br>(DBMS Lab)<br>ABI-204/205</td>
+      <td colspan="2">BCSC1003<br>(DBMS)<br>ABVII-420</td>
+      <td>BCSC1005<br>(CO)<br>ABVII-420</td>
+      <td class="highlight">BCSE0031<br>(Frontend)<br>ABVII-420</td>
+      <td>BELH0020<br>(English)<br>ABVII-420</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><b>Wednesday</b></td>
+      <td></td>
+      <td>BCSC1002<br>(OOP)<br>ABVII-420</td>
+      <td>BCSC1010<br>(Discrete Math)<br>ABVII-420</td>
+      <td></td>
+      <td colspan="2"></td>
+      <td>BCSC1005<br>(CO)<br>ABVII-420</td>
+      <td class="highlight">BCSE0031<br>(Frontend)<br>ABVII-420</td>
+      <td colspan="2">BCSC1010<br>(Discrete Math)<br>ABVII-420</td>
+    </tr>
+    <tr>
+      <td><b>Thursday</b></td>
+      <td>BCSC1002<br>(OOP)<br>ABVII-420</td>
+      <td>BCSE0031<br>(Frontend)<br>ABVII-420</td>
+      <td>PCPH0001<br>(Aptitude)<br>ABVII-420</td>
+      <td>BCSC1005<br>(CO)<br>ABVII-420</td>
+      <td colspan="2"></td>
+      <td>BCSC1010<br>(Discrete Math)<br>ABVII-420</td>
+      <td>BELH0020<br>(English)<br>ABVII-403</td>
+      <td colspan="2">BCSC1003<br>(DBMS)<br>ABVII-420</td>
+    </tr>
+    <tr>
+      <td><b>Friday</b></td>
+      <td colspan="2"></td>
+      <td colspan="2">BELH0020<br>(English)<br>ABVII-420/404</td>
+      <td></td>
+      <td class="highlight">BCSC1010<br>(Discrete Math)<br>ABVII-420</td>
+      <td>BCSC1010<br>(Discrete Math)<br>ABVII-420</td>
+      <td colspan="2">PCPH0001<br>(Aptitude)<br>ABVII-420</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><b>Saturday</b></td>
+      <td colspan="2">BCSC1002<br>(OOP)<br>ABVII-420</td>
+      <td colspan="2">BCSE0031<br>(Frontend)<br>ABVII-420</td>
+      <td colspan="6"></td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<!-- ================= SUBJECT DETAILS ================= -->
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Subject Name</th>
+      <th>Credit</th>
+      <th>L T P</th>
+      <th>Faculty</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>BCSC1005</td><td>Computer Organization</td><td>3</td><td>3 0 0</td><td>Dr. Deepak Mittal</td></tr>
+    <tr><td>BCSC0804</td><td>Computer Organization Lab</td><td>1</td><td>0 0 2</td><td>2FF1: Dr. Deepak Mittal | 2FF2: Dr. Rout | 2FF3: Dr. Punima Sharma</td></tr>
+    <tr><td>OMLC020</td><td>Software Engineering (Online)</td><td>3</td><td>3 0 0</td><td>–</td></tr>
+    <tr><td>BCSC1010</td><td>Discrete Mathematics</td><td>4</td><td>3 1 0</td><td>Dr. Tapan Kant</td></tr>
+    <tr><td>BCSC1003</td><td>Database Management Systems</td><td>3</td><td>3 0 0</td><td>Mr. Amit Kumar</td></tr>
+    <tr><td>BCSC0802</td><td>DBMS Lab</td><td>1</td><td>0 0 2</td><td>2FF1: Mr. Amit Kumar | 2FF2: Ms. Medina Kirti | 2FF3: Mrs. Anupam Yadav</td></tr>
+    <tr><td>BCSC1002</td><td>Object Oriented Programming</td><td>3</td><td>3 0 0</td><td class="highlight">Mr. Vineet Kumar Gupta</td></tr>
+    <tr><td>BCSC0801</td><td>OOP Lab (BYOD)</td><td>1</td><td>0 0 2</td><td class="highlight">Mr. Vineet Kumar Gupta</td></tr>
+    <tr><td>BELH0020</td><td>English for Professional Purpose</td><td>2</td><td>2 2 0</td><td>Mrs. Sarita Das | 2FF1: Dr. Abhijeet Sarsangi | 2FF2: Dr. Neha Adam</td></tr>
+    <tr><td>PCPH0001</td><td>Coding & Programming Aptitude</td><td>2</td><td>2 0 0</td><td>Mr. Vineet Kumar Gupta</td></tr>
+    <tr><td>BELH017</td><td>Ethics & Values (Online)</td><td>2</td><td>2 0 0</td><td>Ms. Manisha Rao</td></tr>
+    <tr><td>BCSE0031</td><td>Frontend Engineering</td><td>3</td><td>3 0 0</td><td>Mr. Abhishek Singh</td></tr>
+    <tr><td>BCSE0813</td><td>Frontend Engineering Lab (BYOD)</td><td>1</td><td>0 0 2</td><td>Mr. Abhishek Singh</td></tr>
+    <tr><td colspan="2"><b>Total</b></td><td><b>24</b></td><td colspan="2"></td></tr>
+  </tbody>
+</table>
+
+</body>
+</html>

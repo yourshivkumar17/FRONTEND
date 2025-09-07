@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About Us | NovaTech Atelier</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --ink: #1f2937;
+        --muted: #4b5563;
+        --bg: #fdfaf6;
+        --card: #ffffff;
+        --line: #e5e7eb;
+        --brand: #6d28d9;
+        --accent: #f97373;
+        --gold: #e6b89c;
+        --header-gradient: linear-gradient(to bottom, #6d28d9, #9333ea, #f97373);
+      }
+
+      body {
+        margin: 0;
+        font-family: Inter, system-ui;
+        color: var(--ink);
+        background: var(--bg);
+        line-height: 1.65;
+      }
+
+      h1, h2, h3 {
+        font-family: "Playfair Display", serif;
+        margin: 0 0 0.6rem;
+        color: var(--ink);
+      }
+
+      p {
+        margin: 0.4rem 0 1rem;
+        color: var(--muted);
+      }
+
+      ::selection {
+        background: var(--accent);
+        color: white;
+      }
+
+      #about-header {
+        position: relative;
+        padding: 96px 24px 120px;
+        text-align: center;
+        color: #fff;
+        background: var(--header-gradient);
+        overflow: hidden;
+      }
+
+      #about-header::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 48px;
+        width: 140px;
+        height: 3px;
+        background: linear-gradient(90deg, transparent, var(--gold), transparent);
+        border-radius: 999px;
+      }
+
+      #about-header h1 {
+        font-size: 2.2rem;
+        letter-spacing: 0.5px;
+        color: #ffffff;
+      }
+
+      #about-header p {
+        max-width: 720px;
+        margin: 0.75rem auto 0;
+        color: #fefefe;
+        opacity: 0.95;
+      }
+
+      .container {
+        max-width: 1120px;
+        margin: 0 auto 64px;
+        padding: 0 24px;
+      }
+
+      .card {
+        background: var(--card);
+        border-radius: 18px;
+        box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+        border: 1px solid var(--line);
+        padding: 32px 28px;
+      }
+
+      .section {
+        margin: 28px 0 40px;
+      }
+
+      .section-title {
+        display: inline-block;
+        font-size: 1.4rem;
+        color: var(--ink);
+        position: relative;
+        padding-bottom: 8px;
+      }
+
+      .section-title::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 56%;
+        height: 6px;
+        border-radius: 999px;
+        background: linear-gradient(90deg, var(--brand), var(--accent));
+        opacity: 0.2;
+      }
+
+      .lead::first-letter {
+        font-family: "Playfair Display", serif;
+        font-size: 2.6rem;
+        line-height: 1;
+        float: left;
+        margin: 0.1rem 0.5rem 0 0;
+        color: var(--brand);
+      }
+
+      a[target="_blank"] {
+        color: var(--brand);
+        font-weight: 600;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(109, 40, 217, 0.4);
+        transition: color 0.2s ease, border-color 0.2s ease;
+      }
+
+      a[target="_blank"]::after {
+        content: " ↗";
+        font-weight: 600;
+      }
+
+      a[target="_blank"]:hover {
+        color: var(--accent);
+        border-color: var(--accent);
+      }
+
+      ul.values {
+        padding-left: 1.2rem;
+        margin: 0.6rem 0 0;
+      }
+
+      ul.values li {
+        margin: 0.1rem 0 0.35rem;
+        color: var(--ink);
+      }
+
+      ul.values li::marker {
+        color: var(--accent);
+      }
+
+      .team {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 22px;
+        margin-top: 14px;
+      }
+
+      .member {
+        position: relative;
+        padding: 26px 22px 22px;
+        border-radius: 16px;
+        background: linear-gradient(180deg, #ffffff, #fdfaf6);
+        border: 1px solid var(--line);
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+      }
+
+      .member::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-top: 26px solid rgba(109, 40, 217, 0.15);
+        border-right: 26px solid rgba(109, 40, 217, 0.15);
+        border-left: 26px solid transparent;
+        border-bottom: 26px solid transparent;
+        border-top-right-radius: 14px;
+      }
+
+      .member[data-role="ceo"]::after {
+        content: " CEO ";
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        font-size: 0.72rem;
+        letter-spacing: 0.4px;
+        background: linear-gradient(90deg, var(--gold), #fce8dc);
+        color: #2c2c2c;
+        padding: 4px 8px;
+        border-radius: 999px;
+        border: 1px solid rgba(0, 0, 0, 0.08);
+      }
+
+      .member:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 16px 36px rgba(15, 23, 42, 0.15);
+        border-color: #ede9fe;
+      }
+
+      .member img {
+        width: 88px;
+        height: 88px;
+        border-radius: 50%;
+        display: block;
+        object-fit: cover;
+        border: 3px solid #fce7f3;
+        margin-bottom: 10px;
+      }
+
+      .member h3 {
+        margin: 0.25rem 0 0.25rem;
+        color: var(--ink);
+      }
+
+      .member small {
+        color: var(--muted);
+      }
+
+      .member p {
+        color: var(--muted);
+      }
+
+      blockquote {
+        position: relative;
+        margin: 0;
+        background: #fdf2f8;
+        border: 1px dashed #fbcfe8;
+        padding: 22px 24px 24px;
+        border-radius: 14px;
+        color: #4c1d95;
+        box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
+      }
+
+      blockquote::before {
+        content: "“";
+        position: absolute;
+        top: -22px;
+        left: 10px;
+        font-family: "Playfair Display", serif;
+        font-size: 4rem;
+        line-height: 1;
+        color: #e879f9;
+        opacity: 0.35;
+      }
+
+      .cta {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+        flex-wrap: wrap;
+        border: 1px solid var(--line);
+        padding: 22px;
+        border-radius: 16px;
+        background: #ffffff;
+      }
+
+      .cta h3 {
+        color: var(--ink);
+      }
+
+      .cta p {
+        color: var(--muted);
+      }
+
+      .cta .btn {
+        --_bg: linear-gradient(90deg, var(--brand), var(--accent));
+        padding: 12px 18px;
+        border-radius: 999px;
+        color: white;
+        background: var(--_bg);
+        text-decoration: none;
+        font-weight: 600;
+        box-shadow: 0 8px 18px rgba(109, 40, 217, 0.25);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .cta .btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 22px rgba(109, 40, 217, 0.3);
+      }
+
+      .cta .btn:focus-visible {
+        outline: 3px solid #ede9fe;
+        outline-offset: 2px;
+      }
+
+      footer {
+        padding: 26px;
+        text-align: center;
+        color: var(--muted);
+        background: #fafafa;
+        border-top: 1px solid var(--line);
+      }
+
+      @media (max-width: 768px) {
+        #about-header {
+          padding: 64px 16px 80px;
+        }
+
+        #about-header h1 {
+          font-size: 1.6rem;
+        }
+
+        .card {
+          padding: 24px 20px;
+        }
+
+        .section-title {
+          font-size: 1.2rem;
+        }
+
+        .cta {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .cta .btn {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header id="about-header">
+      <h1>About NovaTech Atelier</h1>
+      <p>Design-forward technology studio crafting elegant, intelligent experiences for modern enterprises.</p>
+    </header>
+
+    <main class="container">
+      <section class="section card" id="about">
+        <h2 class="section-title">Who We Are</h2>
+        <p class="lead">NovaTech Atelier blends design excellence with deep engineering. We partner with discerning brands to build AI-powered platforms, refined interfaces, and resilient cloud systems that scale gracefully.</p>
+        <p>With teams across 4 continents and a portfolio spanning fintech, luxury retail, and healthcare, our craft balances rigor and beauty. Browse our <a href="https://example.com/case-studies" target="_blank">case studies</a> to see the detail.</p>
+        <ul class="values">
+          <li>Elegance in function</li>
+          <li>Responsible AI and privacy</li>
+          <li>Measurable business outcomes</li>
+        </ul>
+      </section>
+
+      <section class="section card" id="mission">
+        <h2 class="section-title">Our Mission</h2>
+        <blockquote>To shape digital ecosystems where aesthetics, intelligence, and performance coexist—quietly powerful, unmistakably premium.</blockquote>
+      </section>
+
+      <section class="section card" id="team">
+        <h2 class="section-title">Leadership</h2>
+        <div class="team">
+          <article class="member" data-role="ceo">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Portrait of Oliver Kent"/>
+            <h3>Oliver Kent</h3>
+            <small>Chief Executive Officer</small>
+            <p>Steers vision and partnerships with a focus on design-led strategy.</p>
+          </article>
+          <article class="member" data-role="cto">
+            <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Portrait of Isla Moreau"/>
+            <h3>Isla Moreau</h3>
+            <small>Chief Technology Officer</small>
+            <p>Architects our AI and cloud foundations for reliability and speed.</p>
+          </article>
+          <article class="member" data-role="cdo">
+            <img src="https://randomuser.me/api/portraits/men/54.jpg" alt="Portrait of Rafael Ayers"/>
+            <h3>Rafael Ayers</h3>
+            <small>Chief Design Officer</small>
+            <p>Leads product aesthetics and interaction systems with a human touch.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section card" id="contact">
+        <div class="cta">
+          <div>
+            <h3>Work with us</h3>
+            <p>Let’s craft something quietly spectacular together.</p>
+          </div>
+          <a class="btn" href="https://example.com/contact" target="_blank">Start a conversation</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>© 2025 NovaTech Atelier — Crafted with care.</footer>
+  </body>
+</html>
